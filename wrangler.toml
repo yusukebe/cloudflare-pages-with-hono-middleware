@@ -1,0 +1,9 @@
+name = "cloudflare-pages-with-hono-middleware"
+compatibility_date = "2024-07-23"
+
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1001"
+# 20 requests per 10 seconds
+simple = { limit = 25, period = 10 }
